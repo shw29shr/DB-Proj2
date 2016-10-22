@@ -65,6 +65,7 @@ public class SQLInterpreter {
 				} catch (Exception ex) {
 					handler.printCustomError(ex, this.getClass().getSimpleName());
 					//ex.printStackTrace();
+					querycounter++;
 					
 					// Ensure one failure does not halt execution so use continue to process further
 					continue;
